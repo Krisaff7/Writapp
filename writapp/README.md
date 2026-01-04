@@ -1,50 +1,48 @@
-# Welcome to your Expo app 👋
+# Writapp 📝
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Writapp est une application de prise de notes mobile moderne, simple et performante, conçue avec **React Native** et **Expo**. Elle utilise une base de données locale **SQLite** pour garantir que vos données restent privées et accessibles même hors ligne.
 
-## Get started
+## ✨ Fonctionnalités
 
-1. Install dependencies
+- **Gestion des Notes** : Ajoutez, modifiez et supprimez vos notes avec une interface intuitive.
+- **Persistance des Données** : Utilisation de `expo-sqlite` pour un stockage permanent et sécurisé.
+- **Recherche Avancée** : Recherchez vos notes par titre, contenu ou même par **date** (format `JJ/MM/AAAA`).
+- **Tri Intelligent** : Vos notes les plus récentes apparaissent automatiquement en haut de la liste.
+- **Design Moderne** : Une interface épurée avec des ombres subtiles, des animations fluides et un bouton d'action flottant (FAB).
+- **Validation** : Alertes intégrées pour s'assurer que vous ne perdez pas de données ou n'enregistrez pas de notes vides.
 
-   ```bash
-   npm install
-   ```
+## 🚀 Technologies
 
-2. Start the app
+- **Framework** : [Expo](https://expo.dev/) / [React Native](https://reactnative.dev/)
+- **Navigation** : [Expo Router](https://docs.expo.dev/router/introduction/) (Routing basé sur le système de fichiers)
+- **Base de données** : [SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/)
+- **Styles** : [NativeWind](https://www.nativewind.dev/) (Tailwind CSS pour React Native)
+- **Icônes** : [Ionicons](https://icons.expo.fyi/Index) via `@expo/vector-icons`
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Installation et Lancement
 
-In the output, you'll find options to open the app in a
+Suivez ces étapes pour faire fonctionner l'application localement.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 1. Prérequis
+Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé sur votre machine.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 2. Cloner le projet
 ```bash
-npm run reset-project
+git clone https://github.com/votre-compte/Writapp.git
+cd Writapp
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Installer les dépendances
+```bash
+npm install
+```
 
-## Learn more
+### 4. Lancer l'application
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Une fois lancé, vous pourrez scanner le QR code avec l'application **Expo Go** (Android/iOS) ou utiliser un émulateur.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+Dépendences principales : `expo-sqlite`, `expo-router`, `nativewind`, `@expo/vector-icons`.
