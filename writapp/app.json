@@ -12,8 +12,9 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.krisaff.writapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -44,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9cbb9ff2-fd4b-4bb4-9c5d-23ad4d05489a"
+      }
     }
   }
 }

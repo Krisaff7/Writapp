@@ -42,7 +42,17 @@ npm install
 npx expo start
 ```
 
-Une fois lancé, vous pourrez scanner le QR code avec l'application **Expo Go** (Android/iOS) ou utiliser un émulateur.
+### 5. Générer un APK (Android)
+L'application est configurée pour utiliser **EAS (Expo Application Services)**.
+1. Installez EAS CLI : `npm install -g eas-cli`
+2. Connectez-vous à votre compte Expo : `eas login`
+3. Lancez la création de l'APK :
+   ```bash
+   eas build -p android --profile preview
+   ```
+   *Note : Le profil "preview" est configuré dans `eas.json` pour générer un fichier `.apk` installable directement.*
+
+Une fois la commande terminée, vous recevrez un lien pour télécharger votre APK.
 
 ---
 Dépendences principales : `expo-sqlite`, `expo-router`, `nativewind`, `@expo/vector-icons`.
