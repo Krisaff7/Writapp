@@ -32,6 +32,10 @@ export async function deleteNote(db: SQLite.SQLiteDatabase, id: number) {
     await db.runAsync('DELETE FROM notes WHERE id = ?', [id]);
 }
 
+export async function getNoteById(db: SQLite.SQLiteDatabase, id: number): Promise<Note | null> {
+    return await db.getFirstAsync<Note>('SELECT * FROM notes WHERE id = ?', [id]);
+}
+
 export async function updateNote(db: SQLite.SQLiteDatabase, id: number, title: string, content: string) {
     await db.runAsync('UPDATE notes SET title = ?, content = ? WHERE id = ?', [title, content, id]);
 }
