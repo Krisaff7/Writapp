@@ -29,8 +29,9 @@ Writapp est une application Android de bloc-notes conçue pour offrir une expér
    git clone [https://github.com/Krisaff7/Writapp.git](https://github.com/Krisaff7/Writapp.git)
 
 2.**Installer les dependances**
+   ```bash
    npm install
-
+   ```
 3.**Lancer l'application**
    ```bash
    # Pour Android
@@ -38,3 +39,15 @@ Writapp est une application Android de bloc-notes conçue pour offrir une expér
    
    # Ou via Expo si utilisé
    npx expo start
+   ```
+
+## 🎓 Contexte académique
+Développé durant ma formation à l'**IFRI**, WorkGuard démontre ma capacité à transformer un besoin métier précis (gestion de quota d'heures) en une solution technique fonctionnelle et typée.
+
+---
+
+## 📧 Contact
+**Kris Affokpon (Krisaff7)**
+- LinkedIn : www.linkedin.com/in/mahouton-kris-affokpon-12811937a
+- Email : affokponkris4@gmail.com
+-
